@@ -1,0 +1,7 @@
+#!/bin/sh
+for f in test/*.input
+do
+    echo $f
+    ./lloc < $f > $f.actual
+    diff -s $f.expected $f.actual
+done
