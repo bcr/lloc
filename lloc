@@ -1,2 +1,2 @@
 #!/bin/sh
-sed sx/\\*.*\\*/xxg | sed sx//.*xxg | sed '/^\s*$/d'
+sed sx/\\*.*\\*/xxg | sed sx//.*xxg | sed 's/[] []*//' | sed '/^\s*$/d'
