@@ -4,4 +4,5 @@ do
     echo $f
     ./lloc < $f > $f.actual
     diff -s $f.expected $f.actual
+    echo
 done
